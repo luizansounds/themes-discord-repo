@@ -31,7 +31,14 @@
     --Memberlist-Header: rgba(80, 82, 84, .4);
     --Memberlist-Avatar: rgba(30, 32, 34, .4);
     --Memberlist-Scrollbar: rgba(60, 62, 64, .2);
-    --Memberlist-Scrollbar-Thumb: rgba(30, 30, 30, .4);
+    
+    /*extra vars*/
+    --background-image:url(https://cdn.discordapp.com/attachments/818490018623651844/1056931489675227136/image.png);
+    --background-image-blur: 5px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
+    --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
+    --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+    --window-padding: 5px; /* Spacing around the Discord window | DEFAULT: 20px */
+     --window-roundness: 7px; /* Roundness of Discord | DEFAULT: 10px */  
 }
 
 
@@ -43,8 +50,38 @@ body {
     background: transparent;
 }
 
+#app-mount .bg-1QIAus {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--background-image);
+    background-position: var(--background-image-position, center);
+    background-size: var(--background-image-size, cover);
+}
+  
+#app-mount .bg-1QIAus::before {
+    content: "";
+    position: absolute;
+    top: var(--window-padding);
+    right: var(--window-padding);
+    bottom: var(--window-padding);
+    left: var(--window-padding);
+    border-radius: var(--window-roundness);
+    -webkit-backdrop-filter: blur(var(--background-image-blur));
+            backdrop-filter: blur(var(--background-image-blur));
+}
+  
+#app-mount .perksModal-fSYqOq {
+    background-color: rgb(0, 0, 0, var(--middle-brightness));
+    background-image: none;
+    margin: var(--window-padding);
+    border-radius: var(--window-roundness);
+}
+
 .appMount-2yBXZl {
-    background: black url("https://images.pexels.com/photos/2885320/pexels-photo-2885320.jpeg") center/cover no-repeat;
+    /*background: black url("https://images.pexels.com/photos/2885320/pexels-photo-2885320.jpeg") center/cover no-repeat;*/
+    background: transparent;
 }
 
 .app-2CXKsg {
@@ -1095,7 +1132,9 @@ body {
     transform: unset !important;
     z-index: 1;
 }
-
+  #app-mount .tooltipPrimary-3qLMbS {
+    background: var(--gradient);
+  }
 .layer-86YKbF:not(.baseLayer-W6S8cY) {
     z-index: 2;
 }

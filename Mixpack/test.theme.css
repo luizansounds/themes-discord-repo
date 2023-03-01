@@ -1,13 +1,13 @@
 
 @import url("https://raw.githubusercontent.com/Luiza1011/themes-discord-repo/main/Mixpack/Main.css");
 
-@import url("https://raw.githubusercontent.com/Luiza1011/themes-discord-repo/main/Dark%2B%20custom/frosted-source.css");
+/*@import url("https://raw.githubusercontent.com/Luiza1011/themes-discord-repo/main/Dark%2B%20custom/frosted-source.css");*/
 
 /* BlackBox tags */
-@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+/*@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');*/
 
 /* Old Windows titlebar - remove this @import if you wish to use default titlebar */
-@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+/*@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");*/
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 
@@ -15,7 +15,7 @@
 
 :root {
   /* Background image variables */
-  --background-image: url(https://cdn.discordapp.com/attachments/818490018623651844/1056931489675227136/image.png);
+  --background-image:url(https://cdn.discordapp.com/attachments/818490018623651844/1056931489675227136/image.png);
   --background-image-blur: 5px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
   --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
   --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
@@ -34,7 +34,7 @@
   /* Brightness variables */
   --serverlist-brightness: 0.8; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
   --left-brightness: 0.8; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-  --middle-brightness: 0.6; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --middle-brightness: 0.1; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
   --right-brightness: 0.6; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
   --popout-modal-brightness: 0.75; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
 
@@ -45,8 +45,8 @@
 
   /* Tint variables */
   --tooltip: #1e1e1e;
-  --tint-colour: 255,51,159; /* Colour of tint | DEAFULT: 255,51,159 */
-  --tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+  --tint-colour: 10,10,10; /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-brightness: 0.5; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
 
   /* Other variables */
   --window-padding: 5px; /* Spacing around the Discord window | DEFAULT: 20px */
@@ -99,5 +99,4 @@
     --Memberlist-Avatar: rgba(30, 32, 34, .4);
     --Memberlist-Scrollbar: rgba(60, 62, 64, .2);
     --Memberlist-Scrollbar-Thumb: rgba(30, 30, 30, .4);
-};
-
+}
