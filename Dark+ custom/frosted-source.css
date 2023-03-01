@@ -190,6 +190,7 @@
   }
   
   #app-mount .tooltip-14MtrL {
+    background: var(--tooptip);
     color: var(--text-normal);
     text-align: center;
     font-weight: 600;
@@ -198,6 +199,7 @@
     background: var(--tooptip);
   }
   #app-mount .tooltipPrimary-3qLMbS .tooltipPointer-3L49xb {
+    background: var(--tooptip);
     display: none;
   }
   
