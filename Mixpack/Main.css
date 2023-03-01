@@ -669,13 +669,13 @@ textarea {
 
 .chatContent-3KubbW .messagesWrapper-RpOMA3 .scroller-kQBbkU::-webkit-scrollbar-track {
     background: rgba(60, 62, 64, 0.2);
-    border-radius: var(--radius);
+    border-radius: 10px;
     margin: 0;
 }
 
 .chatContent-3KubbW .messagesWrapper-RpOMA3 .scroller-kQBbkU::-webkit-scrollbar-thumb {
     background: rgba(10, 12, 14, 0.3);
-    border-radius: var(--radius);
+    border-radius: 10px;
     border: none;
 }
 
@@ -730,7 +730,7 @@ textarea {
 
 .chatContent-3KubbW .channelTextArea-1VQBuV .scrollableContainer-15eg7h {
     background: rgba(60, 62, 64, 0.2);
-    border-radius: var(--radius);
+    border-radius: 10px;
     min-height: 44px;
     padding: 4px 0;
 }
