@@ -1,0 +1,1092 @@
+/**
+ * @name Discord+ Custom full theme
+ * @author Luiza, PlusInsta, Bates#7075, Gibbu#1211, Disease#3749, mr_miner#6969
+ * @version 1.0
+ * @description Custom theme made with Discord+ theme as base
+ * @source https://github.com/PlusInsta/discord-plus
+ * @source https://github.com/DiscordStyles/RadialStatus
+ * @source https://github.com/mr-miner1/Better-Badges
+ * @source https://github.com/DiscordStyles/HorizontalServerList
+ * @source https://github.com/CommandCrafterHD/Fallout4TerminalTheme
+ * @source https://github.com/maenDisease/BetterDiscordStuff/tree/main/Themes/Float
+*/
+
+
+
+/* Fonts */
+
+@import url(https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Regular.woff);
+@import url(https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Italic.woff);
+@import url(https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Bold.woff);
+@import url(https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-BoldItalic.woff);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+/* Themes */
+
+
+/* Radial Status */ @import url(https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css);
+
+/* Discord+ */ @import url(https://plusinsta.xyz/discord-plus/src/DiscordPlus-source.theme.css);
+
+/* Better Badges */ @import url(https://mr-miner1.github.io/Better-Badges/src/badges.css);
+
+/* Horizontal Server Lists */ @import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
+
+/* Fallout 4 Main */ /*@import url(https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/main.css);*/
+
+/* Disable Fallout CRT */ @import url(https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/disableCRT.css);
+	
+/* Float imports */
+/* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */ /*delete the restto enable */
+/* Addons */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+/* Warning to Remove Minimum Size */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px);
+/* Source */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 940px);
+/* If your theme has custom settings icons, delete or comment this line */
+/* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css) (max-width: 940px);*/	
+	
+
+
+
+
+
+
+/* 1- Discord+ section */
+
+.theme-dark {
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: #000000; /*url(https://cdn.discordapp.com/attachments/996653931033796638/1039717226787373096/wallpapertrans.png);*/ 
+
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 311;
+  --dplus-accent-color-saturation: 30%;
+  --dplus-accent-color-lightness: 31%;
+
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 320;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 60;
+  --dplus-foreground-color-lightness-amount: 1;
+
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 0;
+  --dplus-background-color-saturation-amount:0;
+  --dplus-background-color-lightness-amount: 0;
+  --dplus-background-color-alpha: 0.8;
+}
+
+
+/* If you use light theme, you can give it unique settings that are separate from dark theme. */
+.theme-light {
+  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
+  
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+  
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+/* Fonts */
+/* You can use any installed font on your device. */
+  
+  
+  /*
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
+  */
+  
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Ubuntu';
+  --dplus-font-header: 'Ubuntu';
+ 
+	/*
+  --dplus-font-ui: 'OpenDyslexic';
+  --dplus-font-body: 'OpenDyslexic';
+  --dplus-font-header: 'OpenDyslexic';
+	*/
+	
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
+
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 10px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 10px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* The Home icon on the top left */
+--dplus-icon-home-dark: url(https://i.ibb.co/TqwvWVG/trans-discord-b.png);
+--dplus-icon-home-light: url(https://i.ibb.co/TqwvWVG/trans-discord-b.png);
+}
+
+
+
+/* 2- Radial Status */
+:root {
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 15%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
+
+
+
+/* 3- Better Badges */
+:root{
+    --badge-size: 22px; /*discord defualt = 18px, theme defualt = 22px;*/
+    --badge-margin: 1.5px; /*discord default = 2px, theme defualt = 1.5px*/
+    --badges-everywhere-size: 15px; /*default = 15px*/
+}
+
+
+
+ /* 4- Horizontal servers list settings */
+:root {
+  --HSL-server-icon-size: 56px;  /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 3px;  /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+}
+
+
+
+/* 5- Fallout 4 terminal */
+
+/* (5a- Pink) */
+:root {
+  --background: #000000 !important;
+  --text-color: #ff70ba !important;
+  --highlight: var(--text-color) !important;
+}
+
+
+/* (5b- Classic fallout terminal) */
+/*:root {
+  --background: #000700 !important;
+  --text-color: #4AEF98 !important;
+  --highlight: var(--text-color) !important;
+}*/
+
+
+
+/* 6- Float */
+:root {
+    /* Guildlist */
+    --guildicon-size: 65;
+    --enable-if-using-favorites-experiment: 0; /* boolean */
+    --guildlist-collapse: 0; /* boolean */
+
+    /* Channel sidebar */
+    --slide-window-on-hover: 1; /* boolean */
+    --float-sidebar-width: 65;
+    --sidebar-hover-width: 240px;
+    --sidebar-hover-delay: 0.2s;
+    --sidebar-transition-duration: 0.4s;
+    --sidebar-window-gap: 8px;
+    --sidebar-border-radius: 8px;
+    --sidebar-usersettings-width: 66px;
+
+    /* Memberlist */
+    --float-members-width: 65px;
+    --members-hover-width: 240px;
+    --members-hover-delay: 1.5s;
+    --members-transition-duration: 0.4s;
+
+    /* Channelheader */
+    --topic-opacity: 1;
+    --toolbar-visibility: flex; /* [flex][none] */
+
+    /* Textarea buttons */ /* [flex][none] */
+    --textarea-buttons-gif: flex;
+    --textarea-buttons-sticker: flex;
+    --textarea-buttons-gift: none;
+
+    /* Theme compatibility */
+    /* --float-guildlist-width-correction: 0px; */
+}
+
+/* The variables are used when the window is at the set sizes, each media query can be edited/deleted */
+@media (max-width:700px) {
+    :root {
+        --topic-opacity: 0;
+        --toolbar-visibility: none;
+        --textarea-buttons-gif: none;
+        --textarea-buttons-sticker: none;
+    }
+}
+
+@media (max-width:500px) {
+    :root {
+        --guildicon-size: 40;
+        --float-members-width: 0;
+    }
+}
+
+@media (max-width:400px) {
+    :root {
+        --float-sidebar-width: 0;
+    }
+}
+
+@media (max-width:300px) {
+    :root {
+        --guildlist-collapse: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Emoji --------------------------------------------------------------------------------------- */
+
+.contentWrapper-3vHNP2 {
+    --background-secondary: rgba(0, 0, 0, .9);
+    --background-secondary-alt: rgba(0, 0, 0, .9);
+    --background-tertiary: rgba(0, 0, 0, .9);
+}
+
+.navButtonActive-1EqC5l {
+    background: rgba(40, 100, 200, 0.9);
+}
+
+/* Chat Autocomplete --------------------------------------------------------------------------------------- */
+
+#app-mount .autocomplete-3NRXG8 {
+    background: rgba(0, 0, 0, .9);
+}
+
+#app-mount .autocomplete-3NRXG8 .selected-3H3-RC {
+    background: rgba(0, 0, 0, .9);
+}
+
+/* Status Popout --------------------------------------------------------------------------------------- */
+
+#status-picker .description-3Cwkxk {
+    display: none;
+}
+
+/* Invite Friends Popout --------------------------------------------------------------------------------------- */
+
+.wrapper-3ByaVZ .footer-1hTRRZ {
+    background: var(--background-secondary)
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Memberlist UserPopout --------------------------------------------------------------------------------------- */
+
+.userPopout-2j1gM4 {
+    background: rgba(30, 32, 34, 0.9);
+}
+
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+    background: transparent;
+}
+
+.userPopout-2j1gM4 .footer-3naVBw {
+    background: transparent;
+}
+
+/* Settings --------------------------------------------------------------------------------------- */
+
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV *,
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
+    pointer-events: auto !important;
+    will-change: unset;
+}
+
+.layer-86YKbF.baseLayer-W6S8cY {
+    opacity: 1 !important;
+    transform: unset !important;
+    z-index: 1;
+}
+
+.layer-86YKbF:not(.baseLayer-W6S8cY) {
+    z-index: 2;
+}
+
+#app-mount .standardSidebarView-E9Pc3j {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ {
+    background: transparent;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N {
+    background: transparent;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .bar-1Bhnl9,
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .markDash-yk2kJ- {
+    background: rgba(80, 82, 84, 0.8);
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg {
+    background: linear-gradient(to right, rgba(20, 22, 24, 0.6) 50%, rgba(0, 0, 0, 0.8));
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, rgba(10, 12, 14, 0.2) 50%, rgba(0, 0, 0, 0.8)) 1/2px;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg:hover {
+    background: rgba(0, 0, 0, 0.8)
+}
+
+#app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg[aria-checked=true] {
+    background: linear-gradient(to right, rrgba(0, 0, 0, 0.8) 50%, transparent);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, rgba(40, 80, 160, 0.6)) 1/2px;
+}
+
+.standardSidebarView-E9Pc3j .bd-switch input:checked + .bd-switch-body {
+    --switch-color: rgba(0, 0, 0, 0.8);
+}
+
+.standardSidebarView-E9Pc3j .bd-switch .bd-switch-body {
+    --switch-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.standardSidebarView-E9Pc3j .bd-switch .bd-switch-handle {
+    rx: 4px
+}
+
+#app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V {
+    top: 20px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 40px;
+    flex: 0 0 auto;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma {
+    height: 40px;
+    width: 40px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    color: rgba(100, 101, 102, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma svg {
+    color: #a0a0a0;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma:hover {
+    background: rgba(100, 101, 102, 0.8);
+}
+
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh::-webkit-scrollbar {
+    background: rgba(60, 62, 64, 0.2);
+}
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh::-webkit-scrollbar-thumb {
+    visibility: visible;
+    background: rgba(10, 12, 14, 0.2);
+    border-radius: 7;
+    border: none;
+}
+
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .header-2Kx1US {
+    padding: 4px 10px;
+    margin: 4px 0 8px 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: normal;
+    background: linear-gradient(to right, rgba(80, 82, 84, 0.4) 50%, transparent);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, rgba(80, 82, 84, 0.4)) 1/2px;
+}
+
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .bd-sidebar-header .bd-changelog-button {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG {
+    padding: 6px 10px;
+    font-size: 14px;
+    width: 100%;
+    line-height: normal;
+    margin: 0 4px;
+    border: 2px solid transparent;
+    border-radius: 10;
+    position: relative;
+}
+
+
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG:hover {
+    background: linear-gradient(to right, rgba(40, 80, 160, 0.4) 50%, transparent);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, rgba(40, 80, 160, 0.4)) 1/2px;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG.selected-g-kMVV {
+    background: linear-gradient(to right, rgba(50, 200, 100, 0.4) 50%, transparent);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, rgba(50, 200, 100, 0.4)) 1/2px;
+}
+
+#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG:nth-last-of-type(4) {
+    background: linear-gradient(to right, rgba(200, 50, 50, 0.4) 50%, transparent);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 50%, rgba(200, 50, 50, 0.4)) 1/2px;
+	
+
+}
+
+/* Store Page --------------------------------------------------------------------------------------- */
+
+.applicationStore-2nk7Lo {
+    background: transparent;
+}
+
+.applicationStore-2nk7Lo .headerBar-1dSpQr {
+    background: rgba(60, 62, 64, 0.35);
+}
+
+.applicationStore-2nk7Lo .headerBar-1dSpQr .children-3xh0VB:after {
+    display: none;
+}
+
+.applicationStore-2nk7Lo .scroller-29cQFV {
+    background: transparent;
+}
+
+/* Boost Server Page --------------------------------------------------------------------------------------- */
+
+#app-mount .perksModal-CLcR1c {
+    background-color: rgba(40, 42, 44, .8);
+}
+
+.perksModal-CLcR1c .perksModalContentWrapper-3RHugb {
+    padding: 22px 10px 10px 10px;
+}
+
+#app-mount .closeWrapper-1aVqeP {
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    top: 60px;
+    right: 240px;
+    padding: 0;
+}
+
+.closeWrapper-1aVqeP .closeContent-1uXQiy {
+    height: 60px;
+    width: 40px;
+    max-width: unset;
+    position: static;
+}
+
+.closeWrapper-1aVqeP .closeIcon-11-ihs {
+    height: 60px;
+    width: 40px;
+    position: static;
+}
+
+.closeWrapper-1aVqeP .closeButton-PCZcma {
+    height: 40px;
+    width: 40px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    border-radius: 4px;
+    color: rgba(100, 101, 102, 0.6);
+    background: rgba(60, 62, 64, 0.4);
+}
+
+.closeWrapper-1aVqeP .closeButton-PCZcma:hover {
+    background: rgba(100, 101, 102, 0.2);
+}
+
+.perksModal-CLcR1c .ctaBar-Nhk8yY {
+    background-color: rgba(50, 52, 54, .8);
+}
+
+.perksModal-CLcR1c .tierMarkerBackground-G8FoN4 {
+    background-color: rgba(50, 52, 54, .9);
+}
+
+.perksModal-CLcR1c .tierBody-3ju-rc {
+    background-color: rgba(30, 32, 34, .8);
+}
+
+.perksModal-CLcR1c .perk-19D_HN {
+    background-color: rgba(30, 32, 34, .8);
+}
+
+/* Friends --------------------------------------------------------------------------------------- */
+
+/* Sidebar --------------------------------------------------------------------------------------- */
+
+.privateChannels-oVe7HL {
+    background: ;
+}
+
+.privateChannels-oVe7HL .searchBar-3TnChZ .searchBarComponent-3N7dCG {
+    background: rgba(10, 12, 14, 0.3);
+    text-align: center;
+}
+
+.privateChannels-oVe7HL .selected-3veCBZ {
+    background: rgba(247, 168, 184, .3);
+}
+
+.privateChannels-oVe7HL .interactive-1vLZ_I:hover {
+    background: rgba(247, 168, 184 .6);
+}
+
+.privateChannels-oVe7HL .scroller-WSmht3 {
+    background: transparent;
+}
+
+/* Friends List --------------------------------------------------------------------------------------- */
+
+#app-mount .container-2cd8Mz {
+    background: rgba(60, 62, 64, 0.2);
+}
+
+#app-mount .container-2cd8Mz .container-ZMc96U {
+    background: transparent;
+}
+
+#app-mount .container-2cd8Mz .searchBar-2aylmZ {
+    background: rgba(10, 12, 14, 0.3);
+}
+
+#app-mount .container-2cd8Mz .peopleListItem-u6dGxF {
+    border: none;
+    padding: 0 10px;
+}
+
+#app-mount .container-2cd8Mz .peopleListItem-u6dGxF:nth-of-type(2n) {
+    background: rgba(247, 168, 184, .4);
+}
+
+#app-mount .container-2cd8Mz .peopleListItem-u6dGxF:hover {
+    background: rgba(247, 168, 184, 0.8);
+}
+
+#app-mount .container-2cd8Mz .children-3xh0VB:after {
+    display: none;
+}
+
+/* Memberlist --------------------------------------------------------------------------------------- */
+
+    .container-2o3qEW {
+        background: transparent;
+    }
+
+    .members-3WRCEx {
+        background: var(--Memberlist-Background);
+    }
+
+    .members-3WRCEx::-webkit-scrollbar-track {
+        visibility: visible;
+        background: var(--Memberlist-Scrollbar);
+    }
+
+    .members-3WRCEx::-webkit-scrollbar-thumb {
+        visibility: visible;
+        background: var(--Memberlist-Scrollbar-Thumb);
+        border-radius: 0;
+        border: none;
+    }
+
+    .members-3WRCEx .content-2a4AW9 {
+        background: transparent;
+    }
+
+    /* Category --------------------------------------------------------------------------------------- */
+
+        .membersGroup-2eiWxl {
+            background: linear-gradient(to right, transparent, var(--Memberlist-Header) 3%, transparent);
+            height: unset;
+            font-size: 0.85rem;
+            line-height: normal;
+            letter-spacing: 0.02rem;
+            text-transform: none;
+            font-weight: 500;
+            margin: 0.2rem 0;
+            padding: 0.3rem 0.6rem;
+            color: #F7A8B8;
+        }
+
+        .membersGroup-2eiWxl .roleIcon-2cey4v {
+            margin: 0 0.2rem 0 0;
+            padding: 0.2rem;
+            height: 0.85rem;
+        }
+
+    /* Member Item --------------------------------------------------------------------------------------- */
+
+        .member-2gU6Ar {
+            height: 44px;
+            padding: 0;
+            margin: 0 8px;
+            max-width: unset;
+        }
+        
+        .member-2gU6Ar .layout-1qmrhw {
+            height: 44px;
+            padding: 0;
+            border-radius: 0;
+        }
+        
+        .member-2gU6Ar .layout-1qmrhw:hover {
+            background: transparent;
+        }
+
+        /* Avatar --------------------------------------------------------------------------------------- */
+
+            .avatar-6qzftW {
+                margin: 0;
+                height: 44px;
+                width: 48px;
+                background: var(--Memberlist-Avatar);
+                z-index: 2;
+            }
+            
+            .avatar-6qzftW .wrapper-1VLyxH {
+                border-radius: 0;
+                margin: 0 0 0 4px;
+            }
+            
+            .avatar-6qzftW .wrapper-1VLyxH .mask-1FEkla {
+                overflow: visible;
+            }
+            
+            .avatar-6qzftW .wrapper-1VLyxH .mask-1FEkla foreignObject {
+                mask: none;
+            }
+
+            /* Avatar Status --------------------------------------------------------------------------------------- */
+
+                .avatar-6qzftW foreignObject + rect {
+                    height: 44px;
+                    width: 4px;
+                    x: -8;
+                    y: -6;
+                    mask: none;
+                }
+                
+                .avatar-6qzftW foreignObject + svg {
+                    overflow: visible;
+                }
+                
+                .avatar-6qzftW foreignObject + svg rect {
+                    height: 44px;
+                    width: 4px;
+                    x: -22.5;
+                    y: -23;
+                    mask: none;
+                }
+                
+            /* Typing Icon --------------------------------------------------------------------------------------- */
+
+                .avatar-6qzftW .dots-1BwzZQ {
+                    overflow: visible;
+                }
+    
+                .avatar-6qzftW .dots-1BwzZQ g circle:nth-child(1) {
+                    cx: -10;
+                    cy: -14;
+                    r: 4;
+                }
+
+                .avatar-6qzftW .dots-1BwzZQ g circle:nth-child(2) {
+                    cx: -2;
+                    cy: 0;
+                    r: 4;
+                }
+
+                .avatar-6qzftW .dots-1BwzZQ g circle:nth-child(3) {
+                    cx: 6;
+                    cy: -14;
+                    r: 4;
+                }
+
+            /* --------------------------------------------------------------------------------------- */
+        
+        /* Content --------------------------------------------------------------------------------------- */
+
+            .content-1U25dZ {
+                padding: 0 0.4rem;
+                display: flex;
+                flex-flow: row wrap;
+            }
+                
+            /* Username --------------------------------------------------------------------------------------- */
+
+                .content-1U25dZ .nameAndDecorators-3ERwy2 {
+                    z-index: 1;
+                    min-width: 90%;
+                    flex: 1 1 auto;
+                }
+                
+                .content-1U25dZ .nameAndDecorators-3ERwy2 .username-i5-wv- span::before {
+                    content: "";
+                    position: absolute;
+                    height: 44px;
+                    left: 6px;
+                    right: 0;
+                    top: 0;
+                    background: linear-gradient(to right, currentColor 2% 50%, transparent);
+                    opacity: 0.2;
+                    z-index: -1;
+                }
+                
+                .member-2gU6Ar:hover .username-i5-wv- span::before {
+                    opacity: 0.4;
+                }
+
+            /* Bot Tag --------------------------------------------------------------------------------------- */
+
+                .content-1U25dZ .botTag-2mryIa {
+                    font-size: 0.4rem;
+                    border-radius: 4px;
+                    padding: 0 0.4rem 0 0.2rem;
+                    height: 1rem;
+                    margin: 0 0.4rem;
+                }
+
+                .content-1U25dZ .botText-1fD6Qk {
+                    font-size: 0.6rem;
+                    line-height: normal;
+                    letter-spacing: 0.02rem;
+                    font-weight: 500;
+                }
+
+                .botTag-2mryIa .botTagVerified-2KCPMa {
+                    height: 100%;
+                    width: auto;
+                    margin: 0
+                }
+                
+            /* Owner Tag --------------------------------------------------------------------------------------- */
+
+                .content-1U25dZ .ownerIcon-255uKo {
+                    margin: 0;
+                    top: unset;
+                    height: 1rem;
+                    width: auto;
+                }
+
+            /* Activity Text --------------------------------------------------------------------------------------- */
+
+                .content-1U25dZ .subText-OGOWMj {
+                    z-index:  1;
+                    margin: 0;
+                }
+                
+                .content-1U25dZ .subText-OGOWMj .activity-2EQDZv {
+                    color: #fff;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                .content-1U25dZ .subText-OGOWMj .activityText-1rR-8O {
+                    padding: 0 0.2rem;
+                }
+            
+                .content-1U25dZ .subText-OGOWMj .activityText-1rR-8O strong {
+                    color: #eee;
+                }
+
+        /* Loading --------------------------------------------------------------------------------------- */
+
+            .membersWrap-3NUR2t.hiddenMembers-8kpYM0 .members-3WRCEx {
+                background: var(--Memberlist-Background);
+            }
+
+        /* Category --------------------------------------------------------------------------------------- */
+
+            .membersWrap-3NUR2t.hiddenMembers-8kpYM0 .membersGroup-2eiWxl .memberGroupsPlaceholder-9tqX9V {
+                border-radius: 4px;
+                background: var(--Memberlist-Background);
+                height: 1rem;
+                width: 60%
+            }
+
+        /* Member Item --------------------------------------------------------------------------------------- */
+
+            /* Avatar --------------------------------------------------------------------------------------- */
+
+                .membersWrap-3NUR2t.hiddenMembers-8kpYM0 .placeholderAvatar-1qAcRZ {
+                    background: var(--Memberlist-Background);
+                    border-radius: 4px;
+                }
+
+            /* Content --------------------------------------------------------------------------------------- */
+            
+                .membersWrap-3NUR2t.hiddenMembers-8kpYM0 .placeholderUsername-3iQi_D {
+                    background: var(--Memberlist-Background);
+                    border-radius: 4px;
+                }
+
+        /* --------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* Chat  --------------------------------------------------------------------------------------- */
+
+.content-1jQy2l::before {
+    display: none;
+}
+
+.chatContent-3KubbW {
+    background: transparent;
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 {
+    z-index: 1
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .scroller-kQBbkU::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .scroller-kQBbkU::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .scroller-kQBbkU .messageListItem-ZZ7v6g {
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --interactive-muted: rgb(60, 62, 64);
+    --elevation-stroke: 0 0 0 1px rgba(30, 32, 34, 0.8);
+    --background-mentioned: transparent;
+    --background-mentioned-hover: transparent;
+    --info-warning-foreground: transparent;
+    --brand-experiment-30a: transparent;
+    --brand-experiment-200: white;
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .jumpToPresentBar-1cEnH0 {
+    border-radius: 0;
+    padding: 4px;
+    left: 0;
+    background: transparent;
+}
+
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .newMessagesBar-1hF-9G {
+    border-radius: 0;
+    padding: 4px;
+    left: 0;
+    background: transparent;
+}
+
+.chatContent-3KubbW .form-3gdLxP {
+    padding: 0;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.chatContent-3KubbW .form-3gdLxP::before {
+    display: none;
+}
+
+.chatContent-3KubbW .form-3gdLxP .typing-2J1mQU {
+    bottom: 100%;
+    left: 0;
+    padding: 0 10px;
+    background: transparent;
+}
+
+.chatContent-3KubbW .channelTextArea-1VQBuV {
+    background: transparent;
+    margin: 0;
+}
+
+.chatContent-3KubbW .channelTextArea-1VQBuV .scrollableContainer-15eg7h {
+    background: transparent
+    border-radius: 0;
+    min-height: 44px;
+    padding: 4px 0;
+}
+
+.chatContent-3KubbW .avatar-2e8lTP {
+    border-radius: 4px
+}
+
+
+/* Sub Titlebar --------------------------------------------------------------------------------------- */
+
+#app-mount .title-31SJ6t {
+    background: rgba(0, 0, 0, .8);
+}
+
+#app-mount .title-31SJ6t .children-3xh0VB:after {
+    display: none;
+}
+
+#app-mount .title-31SJ6t .searchBar-jGtisZ {
+    background: rgba(0, 0, 0, .8);
+}
+
+
+/* Bottom Panel --------------------------------------------------------------------------------------- */
+
+.sidebar-1tnWFu .panels-3wFtMD {
+    background: transparent;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl {
+    height: 50px;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq {
+    margin: 0;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq .usernameContainer-3PPkWq {
+    font-size: 0.9rem;
+    line-height: normal;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq .usernameContainer-3PPkWq .title-338goq {
+    font-size: 0.9rem;
+    line-height: normal;
+    flex: 1 1 auto;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq .subtext-2HDqJ7 {
+    font-size: 0.8rem;
+    line-height: normal;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq + .flex-2S1XBF {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq + .flex-2S1XBF .button-12Fmur {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 0;
+}
+
+/* Bottom Panel - Connection Panel --------------------------------------------------------------------------------------- */
+
+.sidebar-1tnWFu .panels-3wFtMD .container-1zzFcN {
+    border: none;
+    padding: 0;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .connection-3k9QeF {
+    padding: 0;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .rtcConnectionStatus-c5A6Av {
+    padding: 0;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .rtcConnectionStatus-c5A6Av .ping-2IpLcU {
+    margin: 0;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .rtcConnectionStatus-c5A6Av .labelWrapper-1HofQ- {
+    padding: 2px 4px;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .connection-3k9QeF .inner-llGtyq .channel-3prF2u {
+    padding: 2px 4px;
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .avatar-1EWyVD {
+    border-radius: 4px
+}
+
+.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .avatar-1EWyVD foreignObject {
+    border-radius: 4px;
+    mask: none;
+}

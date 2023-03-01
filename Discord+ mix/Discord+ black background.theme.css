@@ -1,0 +1,220 @@
+/**
+ * @name Discord+ custom
+ * @author many
+ * @version 0.1.0
+ * @description Highly customizable theme for BetterDiscord.
+*/
+ 
+/*@import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);*/
+@import url("https://plusinsta.xyz/discord-plus/src/DiscordPlus-source.theme.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url('https://mr-miner1.github.io/Better-Badges/src/badges.css');
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+/* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */ /*delete the restto enable */
+/* Addons */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+/* Warning to Remove Minimum Size */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px);
+/* Source */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 940px);
+/* If your theme has custom settings icons, delete or comment this line */
+/* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css) (max-width: 940px);*/
+
+
+/*@import url("https://KillYoy.github.io/DiscordNight/DiscordNight.css");*/
+
+:root {
+    --word-spacing: 2px;       /* Word spacing */@import url("https://KillYoy.github.io/DiscordNight/DiscordNight.css");
+    --letter-spacing: 0.0px;  /* Letter Spacing */
+    --message-line-spacing: 1;  /* Line spacing on messages */
+}
+
+/* Discord+ Theme settings*/
+
+
+.theme-dark {
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: #000000/*url(https://cdn.discordapp.com/attachments/996653931033796638/1039717226787373096/wallpapertrans.png);*/
+
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 311;
+  --dplus-accent-color-saturation: 30%;
+  --dplus-accent-color-lightness: 31%;
+
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 320;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 60;
+  --dplus-foreground-color-lightness-amount: 1;
+
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 0;
+  --dplus-background-color-saturation-amount:0;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+/* If you use light theme, you can give it unique settings that are separate from dark theme. */
+.theme-light {
+  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
+  
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+  
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+/* Fonts */
+/* You can use any installed font on your device. 
+to enable or fonts just make the text comentary instead of normal text*/
+  
+  /*--dplus-font-ui: 'OpenDyslexic';
+  --dplus-font-body: 'OpenDyslexic';
+  --dplus-font-header: 'OpenDyslexic';*/
+
+  --dplus-font-ui: 'ubuntu';
+  --dplus-font-body: 'ubuntu';
+  --dplus-font-header: 'ubuntu';
+
+
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
+
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 10px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 10px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* The Home icon on the top left */
+--dplus-icon-home-dark: url(https://i.ibb.co/TqwvWVG/trans-discord-b.png);
+--dplus-icon-home-light: url(https://i.ibb.co/TqwvWVG/trans-discord-b.png);
+}
+
+
+:root { /* Radial Status theme settings */
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 15%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
+
+
+
+:root { /* Horizontal servers list settings */
+  --HSL-server-icon-size: 50px;  /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 6px;  /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+}
+
+
+:root{  /* Better badges settings */
+    --badge-size: 22px; /*discord defualt = 18px, theme defualt = 22px;*/
+    --badge-margin: 1.5px; /*discord default = 2px, theme defualt = 1.5px*/
+    --badges-everywhere-size: 15px; /*default = 15px*/
+}
+
+
+/* float */
+
+:root {
+    /* Guildlist */
+    --guildicon-size: 48;
+    --enable-if-using-favorites-experiment: 0; /* boolean */
+    --guildlist-collapse: 0; /* boolean */
+
+    /* Channel sidebar */
+    --slide-window-on-hover: 1; /* boolean */
+    --float-sidebar-width: 70;
+    --sidebar-hover-width: 280px;
+    --sidebar-hover-delay: 0.1s;
+    --sidebar-transition-duration: 0.2s;
+    --sidebar-window-gap: 8px;
+    --sidebar-border-radius: 8px;
+    --sidebar-usersettings-width: 40px;
+
+    /* Memberlist */
+    --float-members-width: 65px;
+    --members-hover-width: 240px;
+    --members-hover-delay: 1.5s;
+    --members-transition-duration: 0.4s;
+
+    /* Channelheader */
+    --topic-opacity: 1;
+    --toolbar-visibility: flex; /* [flex][none] */
+
+    /* Textarea buttons */ /* [flex][none] */
+    --textarea-buttons-gif: flex;
+    --textarea-buttons-sticker: flex;
+    --textarea-buttons-gift: none;
+
+    /* Theme compatibility */
+    /* --float-guildlist-width-correction: 0px; */
+}
+
+/* The variables are used when the window is at the set sizes, each media query can be edited/deleted */
+@media (max-width:700px) {
+    :root {
+        --topic-opacity: 0;
+        --toolbar-visibility: none;
+        --textarea-buttons-gif: none;
+        --textarea-buttons-sticker: none;
+    }
+}
+
+@media (max-width:500px) {
+    :root {
+        --guildicon-size: 40;
+        --float-members-width: 0;
+    }
+}
+
+@media (max-width:400px) {
+    :root {
+        --float-sidebar-width: 0;
+    }
+}
+
+@media (max-width:300px) {
+    :root {
+        --guildlist-collapse: 1;
+    }
+}

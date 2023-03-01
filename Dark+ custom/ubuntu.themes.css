@@ -1,0 +1,170 @@
+/*
+ *  Discord custom fonts by Vix
+ *  Repository LICENSE applies to this code.
+ */
+
+/* Ubuntu font imports */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700");
+
+.lookFilled-1Gx00P.colorBrand-3pXr91{
+  font-weight: bold; 
+ color: var(--font-color);}
+.lookInverted-2D7oAl.colorBrand-3pXr91
+{ font-family: var(--font-one), sans !important; 
+  font-weight: normal; font-size: 13px;
+  padding-top: 2px; 
+  color: var(--font-color);}
+
+.guilds-wrapper{
+   font-weight: bold; 
+  color: var(--font-color);}
+.guilds {
+  font-weight: bold; 
+ color: var(--font-color);}
+.friends-online{
+  font-weight: bold; 
+ color: var(--font-color);}
+.accountDetails-3k9g4n{
+  font-weight: bold; 
+ color: var(--font-color);}
+.discriminator
+{ font-weight: bold; 
+  color: var(--font-color);}
+
+.private-channels header{
+  font-weight: bold; 
+ color: var(--font-color);}
+.search-bar input,
+.chat .new-messages-bar button,
+.chat .jump-to-present-bar button,
+div[class*="nameDefault-"],
+div[class*="nameHovered-"],
+div[class*="nameMuted-"],
+div[class*="nameCollapsed"],
+div[class*="nameHoveredCollapsed"],
+div[class*="membersGroup-v9BXpm"],
+div[class*="friends-online"],
+div[class*="total-results"],
+div[class*="header-2N-"]
+{ font-family: var(--font-one), bold !important; 
+  font-weight: bold; font-size: 12px; 
+  color: var(--font-color);} 
+
+div[class*="activityText-sLG0UL"]
+{ font-size: 10px; 
+  color: var(--font-color);}
+
+code[class*="inline"],
+code[class*="scrollbarGhost-"],
+code[class*="scrollbar-"]
+{ font-family: var(--font-two), monospace !important; 
+  font-weight: 600 !important; color: var(--font-color);}
+
+/* Text area placeholder font */
+textarea[class*="textArea-"]::-webkit-input-placeholder
+{ font-family: var(--font-one), sans !important; 
+  font-size: 14px; 
+  color: var(--font-color);}
+
+span[class*="botTagRegular-"],
+span[class*="botTagInvert-"]
+{ font-family: var(--font-one), sans !important; 
+  font-weight: bold; 
+  line-height: 13px; 
+  padding-top: 2px; 
+  color: var(--font-color);}
+
+div[class*="typing-"]
+{ font-size: 12px !important; 
+  color: var(--font-color);}
+
+div[class*="nameTag-2IFDfL"]
+{ line-height: 15px; 
+  color: var(--font-color);}
+
+div[class*="connectedAccountName-f8AEe2"]
+{ line-height: 18px; 
+  color: var(--font-color);}
+
+div[class*="contents-18-Yxp"]
+{ font-family: var(--font-one), bold !important; 
+  font-weight: bold; 
+  font-size: 13px;
+  letter-spacing: -0.5px; 
+  color: var(--font-color);}
+
+div[class*="roleName-32vpEy"]
+{ font-size: 11px; color: var(--font-color);}
+
+span[class*="aka-"]
+{ font-family: var(--font-one), sans !important; 
+  font-weight: bold; 
+  padding-top: 2px; 
+  color: var(--font-color);}
+
+/* Server settings font padding fix */
+.Select 
+.Select-control div,
+span[class*="Select-arrow"]
+{ line-height: 28px; 
+  color: var(--font-color);}
+
+.theme-light 
+.select-2TCrqx 
+.Select-option
+{ padding-top: 12px; }
+
+/* Global fonts */
+input[class*="input-"]::-webkit-input-placeholder,
+input[class*="inputDefault-_djjkz"],
+textarea[class*="textArea-"],
+div[class*="marginTop8-"],
+div[class*="roleName-"],
+div[class*="appMount-"],
+div[class*="connectedAccountName-"],
+div[class*="listName-"],
+div[class*="headerName-"],
+div[class*="headerTag-"],
+div[class*="public-DraftStyleDefault-block"],
+div[class*="headerTabBarWrapper-"],
+div[class*="title-"],
+div[class*="textRow-"],
+input[class*="input-2VB9rf"]
+{ font-family: var(--font-one), sans !important; 
+  font-weight: 400 !important; }
+
+/* Divs */
+.private-channels header,
+div[class*="total-results"],
+div[class*="header-2N-"]
+{ font-family: var(--font-two), sans !important; 
+  font-weight: 400 !important; 
+  letter-spacing: 0px !important; 
+  cursor: default !important; }
+
+div[class*="typing-"],
+div[class*="friends-table-header"],
+div[class*="headerText-"],
+div[class*="activityText-"],
+div[class*="body-"],
+div[class*="channelSeparator-"],
+div[class*="header-"],
+div[class*="title-3pkaKd title-23FrqZ"],
+
+/* Other */
+h1[class*="title-"],
+h1[class*="old-h1"],
+h2[class*="title-"],
+h5[class*="title-"],
+span[class*="timestamp"]
+{ font-family: var(--font-one), sans !important; 
+  font-weight: 300 !important; }
+
+:root {
+  /* Fonts */
+  --font-one: "Ubuntu";
+  --font-two: "Ubuntu Mono";
+  --font-color: #cdaef3;
+}
+
