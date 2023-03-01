@@ -20,6 +20,8 @@
     --background-modifier-selected: rgba(60, 62, 64, .6);
 
     --brand-experiment: rgba(40, 100, 200, .8);
+    --text-color: rgb(230, 230, 230);
+    --sidebar-channel-bg: rgba(50, 200, 100, .4);
     --button-danger-background: rgba(200, 50, 50, .8);
     --interactive-normal: rgba(200, 200, 200);
     --modal-footer-background: rgba(30, 32, 34, 0.4);
@@ -44,7 +46,23 @@
     --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
     --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
     --window-padding: 5px; /* Spacing around the Discord window | DEFAULT: 20px */
-     --window-roundness: 7px; /* Roundness of Discord | DEFAULT: 10px */  
+    --window-roundness: 7px; /* Roundness of Discord | DEFAULT: 10px */  
+}
+
+.cozy-VmLDNB .messageContent-2t3eCI,
+.username-h_Y3Us,
+.subtext-2HDqJ7,
+.embedAuthorName-pGyUPR,
+.embedFieldName-9LYSyR,
+.embedTitle-2n1pEb,
+.embedDescription-1DrJxZ,
+.embedFieldValue-3EHtvR,
+.icon-uXAV0f,
+.reactionBtn-3_qQdk,
+.reactionBtn-3_qQdk:hover .icon-uXAV0f,
+.name-3Uvkvr,
+.headerChildren-2qV9P8 {
+  color: var(--text-color);
 }
 
 
@@ -139,7 +157,7 @@ textarea {
 .guilds-2JjMmN {
     --background-primary: rgba(30, 32, 34, .8);
     --background-secondary: rgba(30, 32, 34, .8);
-    --text-normal: rgb(200, 200, 200);
+    --text-normal: var(--text-color);
     --brand-experiment: rgb(40, 100, 200);
     background: rgba(40, 42, 44, 0.3);
 }
@@ -403,7 +421,7 @@ textarea {
 }
 
 .sidebar-1tnWFu .wrapper-NhbLHG.modeUnread-3Cxepe {
-    --Sidebar-Channel-BG: rgba(50, 200, 100, .4);
+    --Sidebar-Channel-BG: var(--sidebar-channel-bg);
     --Sidebar-Channel-Color: #fff;
 }
 
@@ -576,10 +594,6 @@ textarea {
     flex: 1 1 auto;
 }
 
-.sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq .subtext-2HDqJ7 {
-    font-size: 0.8rem;
-    line-height: normal;
-}
 
 .sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .nameTag-sc-gpq + .flex-2S1XBF {
     display: flex;
@@ -768,7 +782,7 @@ textarea {
     /* Category --------------------------------------------------------------------------------------- */
 
         .membersGroup-2eiWxl {
-            background: linear-gradient(to right, transparent, var(--Memberlist-Header) 3%, transparent);
+            background: linear-gradient(to right, transparent, var(--text-color) 3%, transparent);
             height: unset;
             font-size: 0.85rem;
             line-height: normal;
@@ -777,7 +791,7 @@ textarea {
             font-weight: 500;
             margin: 0.2rem 0;
             padding: 0.3rem 0.6rem;
-            color: #aaa;
+            color: var(--text-color);
         }
 
         .membersGroup-2eiWxl .roleIcon-2cey4v {
@@ -959,7 +973,7 @@ textarea {
                 }
             
                 .content-1U25dZ .subText-OGOWMj .activityText-1rR-8O strong {
-                    color: #eee;
+                    color: var(--text-color);
                 }
 
         /* Loading --------------------------------------------------------------------------------------- */
@@ -1137,26 +1151,8 @@ textarea {
 
 /* Settings --------------------------------------------------------------------------------------- */
 
-.layers-OrUESM > .layer-86YKbF.animating-1rIrGV *,
-.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
-    pointer-events: auto !important;
-    will-change: unset;
-}
-
-.layer-86YKbF.baseLayer-W6S8cY {
-    opacity: 1 !important;
-    transform: unset !important;
-    z-index: 1;
-}
-  #app-mount .tooltipPrimary-3qLMbS {
-    background: var(--gradient);
-  }
-.layer-86YKbF:not(.baseLayer-W6S8cY) {
-    z-index: 2;
-}
-
 #app-mount .standardSidebarView-E9Pc3j {
-    background: rgba(40, 42, 44, 0.8);
+    background: rgba(40, 42, 44, 0.1);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ {
@@ -1169,55 +1165,34 @@ textarea {
 
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .bar-1Bhnl9,
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .markDash-yk2kJ- {
-    background: rgba(80, 82, 84, 0.8);
+    background:rgba(10, 12, 14, 0.1);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg {
-    background: linear-gradient(to right, rgba(20, 22, 24, 0.6) 50%, rgba(10, 12, 14, 0.2));
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, rgba(10, 12, 14, 0.2) 50%, rgba(20, 22, 24, 0.6)) 1/2px;
+    background: transparent
 }
 
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg:hover {
-    background: rgba(10, 12, 14, 0.6);
+    background: rgba(10, 12, 14, 0.1);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .contentRegion-3HkfJJ .contentRegionScroller-2_GT_N .itemFilled-1cPbtg[aria-checked=true] {
-    background: linear-gradient(to right, rgba(40, 80, 160, 0.6) 50%, transparent);
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, rgba(40, 80, 160, 0.6)) 1/2px;
+    background: rgba(10, 12, 14, 0,1)
 }
 
 .standardSidebarView-E9Pc3j .bd-switch input:checked + .bd-switch-body {
-    --switch-color: rgb(40, 100, 200);
+    --switch-color: var(--brand-experiment);
 }
 
 .standardSidebarView-E9Pc3j .bd-switch .bd-switch-body {
-    --switch-color: rgb(60, 62, 64);
-    border-radius: 4px;
+    --switch-color: rgba(60, 62, 64, 0.3);
+    border-radius: var(--radius);
 }
 
-.standardSidebarView-E9Pc3j .bd-switch .bd-switch-handle {
-    rx: 4px
-}
-
-#app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V {
-    top: 20px;
-    right: 10px;
-    margin: 0;
-    padding: 0;
-    height: 60px;
-    width: 40px;
-    flex: 0 0 auto;
-}
 
 #app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma {
-    height: 40px;
-    width: 40px;
-    flex: 0 0 auto;
-    border-radius: 4px;
-    color: rgba(100, 101, 102, 0.8);
-    background: rgba(60, 62, 64, 0.8);
+    color: rgba(100, 101, 102, 0.3);
+    background: rgba(60, 62, 64, 0.3);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma svg {
@@ -1225,7 +1200,7 @@ textarea {
 }
 
 #app-mount .standardSidebarView-E9Pc3j .toolsContainer-25FL6V .closeButton-PCZcma:hover {
-    background: rgba(100, 101, 102, 0.8);
+    background: rgba(100, 101, 102, 0.1);
 }
 
 
@@ -1234,84 +1209,29 @@ textarea {
 }
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh::-webkit-scrollbar {
-    background: rgba(60, 62, 64, 0.2);
+    background: rgba(60, 62, 64, 0.1);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh::-webkit-scrollbar-thumb {
-    visibility: visible;
-    background: rgba(10, 12, 14, 0.2);
-    border-radius: 0;
-    border: none;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN {
-    padding: 10px;
-    width: max-content;
-}
+    background: rgba(10, 12, 14, 0.1);
+    border-radius: var(--radius);}
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .header-2Kx1US {
-    padding: 4px 10px;
-    margin: 4px 0 8px 0;
-    width: 100%;
-    font-size: 16px;
-    line-height: normal;
-    background: linear-gradient(to right, rgba(80, 82, 84, 0.4) 50%, transparent);
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, rgba(80, 82, 84, 0.4)) 1/2px;
+    background: rgba(10, 12, 14, 0.1);
 }
 
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .bd-sidebar-header {
-    position: relative;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .bd-sidebar-header .bd-changelog-button {
-    position: absolute;
-    right: 10px;
-    top: 12px;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG {
-    padding: 6px 10px;
-    font-size: 14px;
-    width: 100%;
-    line-height: normal;
-    margin: 0 4px;
-    border: 2px solid transparent;
-    border-radius: 0;
-    position: relative;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG .premiumLabel-3HPvdB {
-    position: relative;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG .premiumLabel-3HPvdB svg {
-    top: 2px;
-    right: 0;
-}
-
-#app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG svg {
-    position: absolute;
-    right: 10px;
-    top: 6px;
-}
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG:hover {
-    background: linear-gradient(to right, rgba(40, 80, 160, 0.4) 50%, transparent);
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, rgba(40, 80, 160, 0.4)) 1/2px;
+    background: var(--brand-experiment);
 }
+   
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG.selected-g-kMVV {
-    background: linear-gradient(to right, rgba(50, 200, 100, 0.4) 50%, transparent);
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, rgba(50, 200, 100, 0.4)) 1/2px;
+    background: var(--sidebar-channel-bg);
 }
 
 #app-mount .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh .sidebar-nqHbhN .item-3XjbnG:nth-last-of-type(4) {
-    background: linear-gradient(to right, rgba(200, 50, 50, 0.4) 50%, transparent);
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent 50%, rgba(200, 50, 50, 0.4)) 1/2px;
+    background: rgba(200, 50, 50, 0.4)
 }
 
 /* Search Popout --------------------------------------------------------------------------------------- */
