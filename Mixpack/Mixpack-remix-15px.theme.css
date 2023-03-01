@@ -1,16 +1,6 @@
 
 @import url("https://raw.githubusercontent.com/Luiza1011/themes-discord-repo/main/Mixpack/Main.css");
 
-/* BlackBox tags */
-/*@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');*/
-
-/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
-/*@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");*/
-
-@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
-
-@import url("https://mr-miner1.github.io/Better-Badges/src/badges.css");
-
 :root {
 
     /* Discord Variables */
@@ -23,10 +13,12 @@
     --background-accent: rgba(60, 62, 64, .8);
 
     --background-modifier-accent: rgba(60, 62, 64, .6);
-    --background-modifier-hover: rgba(40, 100, 200, .4);
+    --background-modifier-hover: rgba(177, 72, 226, 0.493);
     --background-modifier-selected: rgba(60, 62, 64, .6);
 
-    --brand-experiment: rgba(40, 100, 200, .8);
+    --brand-experiment: rgba(177, 72, 226, 0.493);
+    --text-color: rgb(230, 230, 230);
+    --sidebar-channel-bg: rgba(219, 0, 172, 0.699);
     --button-danger-background: rgba(200, 50, 50, .8);
     --interactive-normal: rgba(200, 200, 200);
     --modal-footer-background: rgba(30, 32, 34, 0.4);
@@ -37,7 +29,7 @@
     /* MixPack Variables */
 
     /* Memberlist */
-    --radius: 100px;
+    --radius: 15px;
     --Memberlist-Background: rgba(60, 62, 64, .2);
     --Memberlist-Header: rgba(80, 82, 84, .4);
     --Memberlist-Avatar: rgba(30, 32, 34, .4);
@@ -45,13 +37,15 @@
     
     /*extra vars*/
     --font: 'Ubuntu';
-    --background-brightness: 40%;
-    --background-image:url(https://cdn.discordapp.com/attachments/818490018623651844/1056931489675227136/image.png);
+    --background-brightness: 20%;
+    --background-image: url(https://cdn.discordapp.com/attachments/818490018623651844/1056931489675227136/image.png);
     --background-image-blur: 5px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
     --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
     --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
     --window-padding: 5px; /* Spacing around the Discord window | DEFAULT: 20px */
-    --window-roundness: 7px; /* Roundness of Discord | DEFAULT: 10px */   
+    --window-roundness: 7px; /* Roundness of Discord | DEFAULT: 10px */  
+
+
 
     --HSL-server-icon-size: 50px;  /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 4px;  /* Spacing between each server icon | DEFAULT: 10px */
