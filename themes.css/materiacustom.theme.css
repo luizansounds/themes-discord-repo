@@ -1,5 +1,5 @@
 /**
- * @name materia custom
+ * @name Material custom
  * @version 0.9.9
  * @author TheCommieAxolotl#0001
  * @authorId 538487970408300544
@@ -11,18 +11,18 @@
  * @BDEditor MaterialDesign
 */
 
-@import url('https://fonts.googleapis.com/css2?family=monotype:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap');
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
 @import url('https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/UserBadges.css');
 @import url('https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css');
 @import url('https://thecommieaxolotl.github.io/BetterDiscord-Stuff/MaterialDesign/Clients/betterdiscord.css');
-@import url('https://nyri4.github.io/Discolored/main.css');
 
 :root {
   --font-primary: Ubuntu;
-  --font-code: monotype;
-  --floating-background-opacity: 50;
-  --floating-background-blur: 7px;
+  --font-code: Source Code Pro;
+  --floating-background-opacity: 67;
+  --floating-background-blur: 5px;
   --version: "0.9.9";
   --version0_9_9: none;
   --01dpShadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -82,15 +82,15 @@
 }
 
 .theme-dark {
-  --skin-accent-h: 270;
-  --skin-accent-s: 100%;
-  --skin-accent-l: 86;
-  --skin-accent-a: 100;
-  --skin-background-h: 271;
-  --skin-background-s: 19%;
-  --skin-background-l: 61;
-  --skin-background-a: 23;
-  --switch-checked-background: hsl(101, calc(var(--saturation-factor) * 54%), 27%);
+  --skin-accent-h: 264;
+  --skin-accent-s: 51%;
+  --skin-accent-l: 67;
+  --skin-accent-a: 71;
+  --skin-background-h: 276;
+  --skin-background-s: 26%;
+  --skin-background-l: 70;
+  --skin-background-a: 100;
+  --switch-checked-background: 306,83%,38%;
   --switch-unchecked-background: #74796e33;
   --switch-unchecked-color: #74796e;
   --skin-name: "Default";
@@ -131,11 +131,11 @@
 }
 
 .theme-light {
-  --skin-accent-h: 270;
-  --skin-accent-s: 100%;
-  --skin-accent-l: 86;
-  --skin-accent-a: 100;
-  --switch-checked-background: hsl(101, calc(var(--saturation-factor) * 54%), 27%);
+  --skin-accent-h: 264;
+  --skin-accent-s: 51%;
+  --skin-accent-l: 67;
+  --skin-accent-a: 71;
+  --switch-checked-background: 306,83%,38%;
   --switch-unchecked-background: #74796e33;
   --switch-unchecked-color: #74796e;
   --skin-name: "Default Light";
