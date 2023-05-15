@@ -1,0 +1,35 @@
+/**
+ * @name Neutron-custom
+ * @version 8.0
+ * @description A simple but highly customizable theme, now sugar free!
+ * @author Spectra
+ * @invite PZdnCVD
+ * @source https://github.com/xcruxiex/themes
+ * @website https://betterdiscord.app/theme/Neutron
+ * @BDEditor Neutron
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
+@import url('https://xcruxiex.github.io/themes/themes-cores/neutron8.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+
+:root {
+  --backgroundImage: url('https://cdn.discordapp.com/attachments/965818092808728606/1066366264370548776/landscape.jpg');
+  --backgroundColor: #0d0d0d;
+  --backgroundSize: cover;
+  --backgroundPosition: center;
+  --backgroundRepeat: no-repeat;
+  --backgroundBlur: 0px;
+  --backgroundOpacity: 0.1;
+  --homeImage: url('https://i.imgur.com/zEJdehP.png');
+  --homeImageSize: cover;
+  --themeColor1: #C657FF;
+  --themeColor2: #572F79;
+  --customFont: Ubuntu;
+  --backgroundCode: rgb(0,0,0,0.48);
+  --backgroundName: rgba(0 0 0 /.5);
+}
+
+/* Any custom CSS below here */
+
+
